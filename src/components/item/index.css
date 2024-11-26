@@ -1,0 +1,107 @@
+.singleItem {
+    width: 33.2%;
+    height: 80%;
+    border-left: 1.4px solid black;
+    border-bottom: 1.4px solid black;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+#productlink{
+    display: flex;
+    flex-direction: column;
+
+}
+.item-name {
+    width: 100%;
+    height: 5%;
+    margin-left: 20px;
+    font-size: 1rem;
+    font-weight: 400;
+    display: flex;
+    align-items: end;
+    font-family: "myFirstFont";
+}
+
+.item-price {
+    width: 100%;
+    height: 5%;
+    margin-left: 20px;
+    display: flex;
+    align-items: start;
+    font-family: "myFirstFont";
+    font-weight: 300;
+}
+
+.item-photo {
+    height: 90%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Add hover effect to items */
+.singleItem:hover {
+    background-color: #f0f0f0;
+}
+
+/* Media query for tablet screens */
+@media (max-width: 1024px) {
+    .singleItem {
+        width: 49.8%;
+        height: 80%;
+    }
+}
+
+/* Media query for smaller screens */
+@media (max-width: 700px) {
+    .singleItem {
+        width: 100%;
+        height: 80%;
+    }
+}
+
+/* Remove default styles for links */
+.singleItem a {
+    text-decoration: none;
+    color: inherit;
+    width: 100%;
+    height: 100%;
+}
+
+#content-box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    overflow: auto;
+    ::-webkit-scrollbar {
+        display: none;
+    }
+    /* Hide scrollbar for IE, Edge and Firefox */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+#itemsList {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    right: 0px;
+    top: 0px;
+    padding-left: 0;
+}
+
+#listtt {
+    background-color: white;
+    height: 100%;
+    width: 75%;
+    border-top: 0px;
+    z-index: 2;
+}

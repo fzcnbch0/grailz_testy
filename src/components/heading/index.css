@@ -1,0 +1,31 @@
+#heading{
+    width: 100vw;
+    border: 1.4px solid black;
+    border-top: 0 ;
+    color: black;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+}
+#page{
+    display: flex;
+    padding-left: 40px;
+    align-items: center;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 470;
+    width: 10%;
+
+}
+#directory{
+    display: flex;
+    padding-right: 40px;
+    align-items: center;
+    color: black;
+    font-size: 0.8rem;
+    font-weight: 470;
+    width: 15%;
+    justify-content: flex-end;
+}

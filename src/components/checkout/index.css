@@ -1,0 +1,253 @@
+.checkout{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90%;
+}
+.formal-info{
+    display: flex;
+    width: 40%;
+    height: 80%;
+    font-weight: 600;
+    color: black;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    input{
+        height: 20%;
+    }
+    
+}
+#agreement{
+    height: 40%;
+}
+#order-details{
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+    width: 100%;
+    div{
+        height: 20%;
+        display: flex;
+        flex-direction: row;
+        font-weight: 300;
+        font-size: 0.9rem;
+    }
+    .total-prices{
+        display: flex;
+        justify-content: flex-end;
+        align-items:center;
+    }
+}
+.checkout-cart-items{
+    width: 90%;
+    height: 45%;
+    list-style: none;
+    padding-left: 0;
+    border-bottom: 1.4px solid black;
+    overflow: auto;
+    ::-webkit-scrollbar {
+      display: none;
+    }
+    /* Hide scrollbar for IE, Edge and Firefox */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+
+  }
+  #generalinfo{
+    color: black;
+    width: 85%;
+  }
+  .checkout-heading{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+  }
+  #checkout-tax{
+    border-bottom: 1px dotted black;
+  }
+  .checkout-items{
+    height: 80%;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .checkout-cart-item{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px dotted black;
+
+  img{
+    width: 37%;
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 80%;
+  }
+  .checkout-prod-inf{
+    height: 80%;
+    color: black;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h3{
+        width: 100%;
+    }
+    div{
+        width: 95%;
+    }
+  }
+  }
+
+.items{
+    width: 35%;
+    height: 80%;
+}
+#shipping{
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+}
+#phone{
+    display: flex;
+    height: 20%;
+    flex-direction: column;
+
+}
+#payement{
+    height: 35%;
+   
+}
+.order-button{
+    height: 10%;
+}
+.labels{
+ 
+    height: 20%;
+}
+#user-shipping-info{
+    display: flex;
+    flex-direction: column;
+}
+#common-info{
+    height: 80%;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    p{
+        display: flex;
+        align-items: center;
+    }
+    
+}
+#payment-buttons-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+
+    
+}
+#payment-choice{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    
+}
+.payment-button{
+color: black;
+    background: none;
+    border: 1.4px solid black;
+    width: 30%;
+    height: 75%;
+    margin-right: 20px;
+}
+.small-font-size{
+    font-size: 0.7rem;
+    color: gray;
+}
+.big-font-size{
+    font-size: 1rem;
+    color: black;
+}
+.data{
+    height: 80%;
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .input-filed{
+        align-items: flex-end;
+        height: 85%;
+        width: 90%;
+        border: 1px solid whitesmoke;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        p{
+            display: flex;
+            align-items: center;
+            width: 95%;
+        }
+    }
+}
+#payment{
+   height: 20%;
+   display: flex;
+   flex-direction: column;
+}
+@media (max-width: 700px) {
+    .payment-button{
+        color: black;
+            background: none;
+            border: 1.4px solid black;
+            width: 50%;
+            height: 75%;
+            margin-right: 20px;
+        }
+
+        .checkout-cart-item{
+            width: 100%;
+            height: 60%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px dotted black;
+        
+          img{
+            width: 37%;
+            background-color: rgba(0, 0, 0, 0.3);
+            height: 80%;
+          }
+          .checkout-prod-inf{
+            height: 80%;
+            color: black;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            h3{
+                width: 100%;
+                font-size: small;
+            }
+            div{
+                width: 95%;
+            }
+          }
+          }
+}

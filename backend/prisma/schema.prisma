@@ -1,0 +1,85 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model item {
+  item_id       Int            @id @default(autoincrement())
+  name          String?        @db.VarChar(100)
+  description   String?        @db.Text
+  price         Decimal?       @db.Decimal(10, 2)
+  item_category item_category?
+  measurements  measurements?
+  offer         offer?
+  user_cart     user_cart[]
+  user_orders   user_orders[]
+}
+
+model item_category {
+  item_id    Int     @id
+  department String? @db.VarChar(100)
+  category   String? @db.VarChar(100)
+  size       String? @db.VarChar(10)
+  designer   String? @db.VarChar(100)
+  item       item    @relation(fields: [item_id], references: [item_id], onUpdate: Restrict, map: "item_category_ibfk_1")
+}
+
+model measurements {
+  item_id Int    @id
+  length  Float? @db.Float
+  width   Float? @db.Float
+  item    item   @relation(fields: [item_id], references: [item_id], onUpdate: Restrict, map: "measurements_ibfk_1")
+}
+
+model offer {
+  item_id    Int     @id
+  image_path String? @db.VarChar(255)
+  item       item    @relation(fields: [item_id], references: [item_id], onUpdate: Restrict, map: "offer_ibfk_1")
+}
+
+model user {
+  user_id       Int            @id @default(autoincrement())
+  name          String?        @db.VarChar(100)
+  balance       Decimal?       @db.Decimal(10, 2)
+  city          String?        @db.VarChar(100)
+  password      String?        @db.VarChar(255)
+  user_cart     user_cart[]
+  user_orders   user_orders[]
+  user_shipping user_shipping?
+}
+
+model user_cart {
+  user_id Int
+  item_id Int
+  user    user @relation(fields: [user_id], references: [user_id], onUpdate: Restrict, map: "user_cart_ibfk_1")
+  item    item @relation(fields: [item_id], references: [item_id], onUpdate: Restrict, map: "user_cart_ibfk_2")
+
+  @@id([user_id, item_id])
+  @@index([item_id], map: "item_id")
+}
+
+model user_orders {
+  user_id  Int?
+  order_id Int   @id @default(autoincrement())
+  item_id  Int?
+  user     user? @relation(fields: [user_id], references: [user_id], onDelete: Restrict, onUpdate: Restrict, map: "user_orders_ibfk_1")
+  item     item? @relation(fields: [item_id], references: [item_id], onDelete: Restrict, onUpdate: Restrict, map: "user_orders_ibfk_2")
+
+  @@index([item_id], map: "item_id")
+  @@index([user_id], map: "user_id")
+}
+
+model user_shipping {
+  user_id      Int     @id
+  address      String? @db.VarChar(255)
+  city         String? @db.VarChar(100)
+  state        String? @db.VarChar(100)
+  postal_code  String? @db.VarChar(20)
+  country      String? @db.VarChar(100)
+  phone_number String? @db.VarChar(20)
+  user         user    @relation(fields: [user_id], references: [user_id], onUpdate: Restrict, map: "user_shipping_ibfk_1")
+}

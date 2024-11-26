@@ -1,0 +1,60 @@
+#filter-box{
+    height: 50%;
+    width: 25%;
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    
+}
+h3{
+    padding-left: 20px;  
+    width: 96%;
+    height: 15%;
+    border-bottom: 1.4px solid black;
+    display: flex;
+    align-items: center;
+    font-family: "myFirstFont";
+}
+.filtr{
+    height: 21%;
+    width: 100%;
+
+}
+.filtr input {
+   
+    font-family: "myFirstFont";
+    font-size: 1.3rem;
+    padding-left: 15px;
+    background-color: white;
+    color: #000;
+    height: 50%;
+    border: none;
+    outline: none; /* Removes the default focus outline */
+    cursor: pointer; /* Sets the cursor to pointer */
+    transition: border-color 0.3s ease; /* Smooth transition for the border color */
+    
+  }
+  .filtr label{
+    width: 100%;
+    height: 30%;
+    font-family: "myFirstFont";
+    padding-left: 10px;  
+  }
+  
+  .filtr input:focus {
+    border-bottom-color: #007BFF; /* Changes the underline color on focus */
+  }
+  #apply-button{
+    background-color: white;
+    border: 1.4px solid black;
+    height: 20%;
+    color: black;
+    border-radius: 0%;
+    width: 80%;
+  }

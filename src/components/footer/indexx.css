@@ -1,0 +1,148 @@
+.footer{
+    width: 100%;
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(28,26,27,255);
+    align-items: center;
+    
+}
+#footer-content{
+    height: 100%;
+    width: 90%;
+}
+#sections{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 70%;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer h4{
+    height: 10%;
+    margin-bottom: 20px;
+}
+.footer-section ul{
+    height: 70%;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+.footer li{
+    font-size: 0.8rem;
+    font-weight: 600;
+
+}
+#icons{
+    display: flex;
+    flex-direction: row;
+    li{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.footer-section{
+    width: 27%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+#payment2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    height: 30%;
+    width: 100%;
+    border-top: 1.4px solid white;
+    ul{
+        display: flex;
+        list-style: none;
+        flex-direction: row;
+        height: 100%;
+        width: 10%;
+        padding-left: 0;
+    li{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    }
+}
+#watermark{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 1024) {
+    #payment2{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        height: 30%;
+        width: 100%;
+        border-top: 1.4px solid white;
+        ul{
+            display: flex;
+            list-style: none;
+            flex-direction: row;
+            height: 100%;
+            width: 20%;
+            padding-left: 0;
+        li{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    #payment2{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        height: 30%;
+        width: 100%;
+        border-top: 1.4px solid white;
+        ul{
+            display: flex;
+            list-style: none;
+            flex-direction: row;
+            height: 100%;
+            width: 30%;
+            padding-left: 0;
+        li{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        }
+    }
+    .footer-section{
+        width: 27%;
+        height: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        h4{
+            font-size: 0.7rem;
+        }
+    
+    }
+}
+
+

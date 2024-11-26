@@ -1,0 +1,161 @@
+#item-container{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: white;
+}
+
+.item-detail{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 100%;
+}
+
+.offer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 34%;
+
+    img{
+        border: 1.4px solid black;
+        height: 90%;
+        width: 80%;
+    }
+}
+
+#iinfo{
+    height: 30%;
+    width: 80%;
+    align-items: space-between;
+    display: flex;
+    color: black;
+    flex-direction: row;
+    font-family: "myFirstFont";
+    h1{
+        font-size: 1rem;
+        text-transform: uppercase;
+    }
+    
+}
+#data{
+    height: 100%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    .subsection{
+        display: flex;
+        flex-direction: row;
+        height: auto;
+        font-family: "myFirstFont";
+        
+        p{
+            font-weight: 200;
+            color: grey;
+            margin-left: 20px;
+
+        }
+    }
+}
+#likecounter{
+    width: 10%;
+    height: 30%;
+    p,#heart-icon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
+.measurements{
+    height: 10%;
+    display: flex;
+    width: 80%;
+
+    color: black;
+
+
+    table{
+
+        border: 1.4px solid black;
+        display: flex;
+        flex-direction: column;
+    width: 50%;
+    height: 100%;
+
+    tr{
+        display: flex;
+        height: 50%;
+        width: 100%;
+        .legend{
+            width: 30%;
+            height: 100%;
+        }
+        .value{
+            width: 70%;
+            height: 100%;
+        }
+    }
+    }
+    
+}
+.actions{
+    height: 34%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    button{
+        width: 80%;
+        height: 24%;
+        border-radius: 0;
+        background:none;
+        color: black;
+        border: 1.4px solid black;
+    }
+    #purchase{
+        background-color: black;
+        color: white;
+    }
+}
+
+@media (max-width: 700px) {
+    #item-container{
+        height: 150%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+    }
+    .offer{
+        height: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+    
+        img{
+            border: 1.4px solid black;
+            height: 90%;
+            width: 90%;
+        }
+    }
+    .item-detail{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        height: 100%;
+    }
+}
+#heart-icon{
+    cursor: pointer;
+}

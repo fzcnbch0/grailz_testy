@@ -1,0 +1,14 @@
+*{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+@font-face {
+  font-family: "myFirstFont";
+  src: url("C:/Users/Yakubu/Downloads/pilated-font/PilatedfreeRegular-K7xPo.otf");
+}

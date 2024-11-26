@@ -1,0 +1,145 @@
+#account-container{
+    display: flex;
+    color: black;
+    flex-direction: column;
+    height: 70%;
+    background-color: white;
+}
+.order-list{
+    display: flex;
+}
+
+#wback{
+    width: 100%;
+    height: 13%;
+    border: 1.4px solid black;
+    border-top: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    div{
+        height: 100%;
+        display: flex;
+        
+        align-items: center;
+        width: 47%;
+        font-size: 1.7rem;
+        font-weight: 500;
+    }
+    #out{
+        justify-content: flex-end;
+        text-decoration: underline;
+        font-size: 0.9rem;
+    }
+    
+}
+h3{
+    padding-left: 0;
+}
+.account-details{
+    background-color: white;
+    display: flex;
+    width: 100%;
+    height: 80%;
+    align-items: center;
+    justify-content: center;
+   
+    .orders-column{
+        display: flex;
+        flex-direction: column;
+        width: 57%;
+        h2{
+            
+            width: 100%;
+            height: 15%;
+            display: flex;
+            align-items: center;
+            font-size: 0.9rem;
+            border: 1.4px solid black;
+            border-top: 0;
+        }
+        .order-list{
+            display: flex;
+            flex-direction: column;
+            border: 1.4px solid black;
+            border-top: 0;
+            overflow: auto;
+    ::-webkit-scrollbar {
+      display: none;
+    }
+    /* Hide scrollbar for IE, Edge and Firefox */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+            .order{
+                display: flex;
+            .inf{
+                display: flex;
+                flex-direction: column;
+                padding-left: 20px;
+            }
+            }
+        }
+
+    }
+
+    .primary-address-column{
+        width: 37%;
+        display: flex;
+        flex-direction: column;
+        h2{
+            width: 100%;
+            height: 15%;
+            display: flex;
+            align-items: center;
+            font-size: 0.9rem;
+            border-right: 1.4px solid black;
+           
+        }
+        .address-details{
+            border: 1.4px solid black;
+            border-left: 0;
+        }
+    }
+}
+@media (max-width: 700px) {
+    #wback{
+       
+        width: 100%;
+        height: 13%;
+        border: 1.4px solid black;
+        border-top: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        div{
+            height: 100%;
+            display: flex;
+            
+            align-items: center;
+            width: 47%;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+        #out{
+            justify-content: flex-end;
+            text-decoration: underline;
+            font-size: 0.9rem;
+        }
+        
+    }
+}
+@media (max-width: 700px) {
+
+    .order{
+        height: 50%;
+        display: flex;
+        align-items: center;
+    .inf{
+        display: flex;
+        flex-direction: column;
+        padding-left: 20px;
+    }
+    }
+}
