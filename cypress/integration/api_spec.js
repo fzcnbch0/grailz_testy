@@ -10,7 +10,7 @@ describe('GET /items', () => {
     // Test 2: Filtrowanie przedmiotów po nazwie
     it('should filter items by name', () => {
       // Zastąp 'someItemName' nazwą przedmiotu, którego chcesz szukać
-      const itemName = 'someItemName';
+      const itemName = 'boxy-tshirt';
       cy.request(`/items?name=${itemName}`)
         .its('body') // Otrzymujemy odpowiedź z API
         .should('be.an', 'array') // Powinna być tablicą
@@ -38,5 +38,7 @@ describe('GET /items', () => {
         });
       });
     });
+
+    
   });
   
